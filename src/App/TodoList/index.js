@@ -4,7 +4,12 @@ import './style.css';
 
 function TodoList(props) {
   const renderTodo = function (todo) {
-    return <div>{todo.title}</div>;
+    return (
+        <div>
+          <div>{todo.title}</div>
+          <div>{todo.name}</div>
+        </div>
+    );
   }
 
   return (
